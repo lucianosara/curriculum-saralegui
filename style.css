@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    hyphens: none;
+  }
+.imprimir-area{
+    width: 80%;
+    margin: 20px auto;
+
+}
+.imprimir-area .cabecera{
+    width: 100%;
+    height: 150px;
+    background-color: #1e2d58;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cabecera img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+.cabecera img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgb(0,0,0,.5);
+}
+.cabecera-texto{
+    color: rgb(197, 196, 196);
+    width: 60%;
+    margin-left: auto;
+}
+.cabecera-texto h1{
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+}
+.cabecera-texto p{
+    font-size: 20px;
+    color: lightgray;
+}
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+.area-izquierda{
+    width: 30%;
+    background-color: rgb(236,236,236);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.area-izquierda .contacto{
+    margin-top: 130px;
+}
+.contacto h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.contacto h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contacto p{
+    font-size: 17px;
+}
+.habilidad{
+    margin-top: 20px;
+}
+.habilidad h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.barras{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.barras .barra p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.barra span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(158, 156, 156);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.barra span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.redes h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.redes h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.redes p{
+    font-size: 15px;
+    color: lightseagreen;
+}
+.area-derecha{
+    width:70%;
+    padding: 35px 65px 65px 65px;
+    
+}
+.area-derecha h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.area-derecha h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: rgb(110, 110, 110);
+}
+
+.area-derecha p{
+    padding-left: 84px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color:dimgrey;
+    margin-top: 10px;
+}
+.grupo-trabajo{
+    margin: 20px 0;
+}
+.trabajo .grupo-trabajo{
+    position: relative;
+}
+.grupo-trabajo h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.grupo-trabajo h4{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color:slategray
+}
+.grupo-trabajo span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.educacion{
+    margin-top: 30PX;
+}
+.edu-grupo{
+    position: relative;
+    margin: 10px 0;
+}
+.edu-grupo H4{
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.edu-grupo span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.edu-grupo p{
+    padding-left: 80px;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #scroll-to-top:hover {
+    background-color: #777;
+  }
+  
+  .fa {
+    font-size: 24px;
+  }
+  .fa-solid, .fas {
+    font-weight: 900;
+    color: #1e2d58;
+}
+   
+#imprimir-btn{
+    font-size: 25px;
+    margin-top: 35px;
+    padding: 10px 20px;
+    background-color: rgb(83,83,83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+}
+#imprimir-btn:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgb(0,0,0,.5);
+}
+
+@media print{
+    body *{
+        visibility: hidden;
+    }
+    .imprimir-area *{
+        visibility: visible;
+    }
+}
+@media (max-width: 768px) {
+    body {
+    font-size: 16px;
+    }
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cabecera img {
+        max-width: 100%;
+    }
+    .cabecera-texto h1 {
+        font-size: 2rem;
+    }
+    .cabecera-texto p {
+        font-size: 1.5rem;
+    }
+    .area-izquierda, .area-derecha {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .area-izquierda article, .area-derecha section {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .area-izquierda article {
+        margin-bottom: 2rem;
+    }
+    
+    .habilidad {
+        margin-top: 2rem;
+    }
+    
+    .redes {
+        margin-top: 2rem;
+    }
+    
+    .acerca-de-mi {
+        margin-top: 2rem;
+    }
+}
